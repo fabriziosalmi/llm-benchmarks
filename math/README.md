@@ -1,9 +1,15 @@
-**Setup**
+# Simple Math benchamrk for LLMs
+
+## Requirements
+
+- LM Studio
+- microsoft/Phi-3-mini-4k-instruct-gguf/Phi-3-mini-4k-instruct-q4.gguf model
+
+## Testing
 
 Discussion [https://www.reddit.com/r/LocalLLaMA/comments/1cdxjax/comment/l1gq754/?context=3](here)
 
-- Tested on LMStudio (Apple MacBook Pro M2) using microsoft/Phi-3-mini-4k-instruct-gguf/Phi-3-mini-4k-instruct-q4.gguf model
-
+I'm testing on Apple MacBook Pro M2
 
 ```
 (llmbench-env) MacBook-Pro:LLMbench fab$ python generate_test.py
