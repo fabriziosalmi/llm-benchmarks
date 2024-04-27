@@ -62,7 +62,7 @@ def process_questions(filename, api_url, iterations=2):
                         "correct": correct,
                         "received_answer": answer_text,
                         "final_answer": answer,
-                        "correct_answer": local_answer  # Store the correct calculated answer
+                        "correct_answer": local_answer  # Ensure the correct answer is stored
                     })
                     summary_stats[row['test_id']]['correct_count'] += correct
                     summary_stats[row['test_id']]['responses'].append(answer)
