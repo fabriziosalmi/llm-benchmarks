@@ -26,7 +26,8 @@ def create_test_cases(filename, number_of_cases, operations):
             num2 += 1
 
         # Formulate the question and add to the set
-        question = f"please resolve this math operation by providing the final result only in numerical format: {num1} {op} {num2} ?"
+        question = f"{num1} {op} {num2} ?"
+        # question = f"Prepend prompt if you want here.. {num1} {op} {num2} ?"
         questions.add(question)
 
     # Write to CSV
