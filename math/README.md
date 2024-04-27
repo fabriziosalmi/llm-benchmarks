@@ -1,5 +1,7 @@
 # Simple Math benchamrk for LLMs
 
+Discussion [https://www.reddit.com/r/LocalLLaMA/comments/1cdxjax/comment/l1gq754/?context=3](here)
+
 ## Requirements
 
 - LM Studio
@@ -7,9 +9,31 @@
 
 ## Testing
 
-Discussion [https://www.reddit.com/r/LocalLLaMA/comments/1cdxjax/comment/l1gq754/?context=3](here)
+**generate_data.py**
 
-I'm testing on Apple MacBook Pro M2
+You can change range by increasing max_number:
+
+`max_number = 9999  # Maximum number for the math problems`
+
+You can change operations for tests
+
+```
+# Example usage:
+# create_test_cases('test.csv', 100, ['+'])
+create_test_cases('test.csv', 10, ['+', '*'])
+# create_test_cases('test.csv', 10, ['+', '-', '*', '/'])
+```
+
+**benchmark.py**
+
+You can change number of iterations:
+
+`def process_questions(filename, api_url, iterations=2):`
+
+
+**Example test**
+
+I'm testing on Apple MacBook Pro M2, tested up to 999999999 as max_number and up to 10 iterations per question.
 
 ```
 (llmbench-env) MacBook-Pro:LLMbench fab$ python generate_test.py
