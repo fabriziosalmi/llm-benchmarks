@@ -10,7 +10,9 @@ from tqdm import tqdm
 def send_question(api_url, question):
     headers = {"Content-Type": "application/json"}
     data = {
-        "model": "microsoft/Phi-3-mini-4k-instruct-gguf",
+        #"model": "microsoft/Phi-3-mini-4k-instruct-gguf",
+        #"model": "lmstudio-community/stable-code-instruct-3b-GGUF/stable-code-instruct-3b-Q6_K.gguf",
+        "model": "lmstudio-community/Meta-Llama-3-8B-Instruct-GGUF/Meta-Llama-3-8B-Instruct-IQ3_M.gguf",
         "messages": [
             {"role": "system", "content": "Calculate the result. Provide the result only."},
             {"role": "user", "content": question}
@@ -61,7 +63,6 @@ def process_questions(filename, api_url, iterations=2):
                         "question": math_question,
                         "correct": correct,
                         "received_answer": answer_text,
-                        "final_answer": answer,
                         "correct_answer": local_answer  # Ensure the correct answer is stored
                     })
                     summary_stats[row['test_id']]['correct_count'] += correct
