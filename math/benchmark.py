@@ -78,7 +78,7 @@ def process_questions(filename, api_url, iterations=2):
     print(tabulate(df_summary, headers='keys', tablefmt='pretty', showindex=False))
 
     # Save detailed results to JSON
-    with open('results_detailed.json', 'w') as jsonfile:
+    with open('results.json', 'w') as jsonfile:
         json.dump(results, jsonfile, indent=4)
 
 # Example usage:
