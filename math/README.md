@@ -4,7 +4,7 @@ Discussion [https://www.reddit.com/r/LocalLLaMA/comments/1cdxjax/comment/l1gq754
 
 ## Requirements
 
-- any LLM local inference server running llamacpp
+- any LLM local inference server based on llama.cpp
 - a quantized model like llama3 or phi3
 
 ## Testing
