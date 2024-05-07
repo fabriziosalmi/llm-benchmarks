@@ -4,8 +4,8 @@ Discussion [https://www.reddit.com/r/LocalLLaMA/comments/1cdxjax/comment/l1gq754
 
 ## Requirements
 
-- LM Studio
-- microsoft/Phi-3-mini-4k-instruct-gguf/Phi-3-mini-4k-instruct-q4.gguf model
+- any LLM local inference server running llamacpp
+- a quantized model like llama3 or phi3
 
 ## Testing
 
